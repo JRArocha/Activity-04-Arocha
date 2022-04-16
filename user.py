@@ -14,6 +14,10 @@ while True:
             cv2.waitKey(0)
             cv2.destroyAllWindows()
             break
+
+        else:
+            print("File not found...")
+
     elif flag == 2:
         if os.path.exists(fileName):
             image = cv2.imread(fileName,0)
@@ -22,5 +26,8 @@ while True:
             cv2.destroyAllWindows()
             break
 
+        else:
+            print("File not found...")
+
     else:
-        print("File not found...")
+        print("Error Flag...")
