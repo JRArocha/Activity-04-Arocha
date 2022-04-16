@@ -10,10 +10,19 @@ while True:
     if flag == 1:
         if os.path.exists(fileName):
             image = cv2.imread(fileName,1)
-            cv2.imshow(fileName, image)
-            cv2.waitKey(0)
-            cv2.destroyAllWindows()
-            break
+            if file == 'qiqi':
+                name = 'A Dead Child'
+                cv2.imshow(name, image)
+                cv2.waitKey(0)
+                cv2.destroyAllWindows()
+                break
+            
+            if file == 'childe':
+                name = 'A Weird Childe'
+                cv2.imshow(name, image)
+                cv2.waitKey(0)
+                cv2.destroyAllWindows()
+                break
 
         else:
             print("File not found...")
@@ -21,10 +30,19 @@ while True:
     elif flag == 2:
         if os.path.exists(fileName):
             image = cv2.imread(fileName,0)
-            cv2.imshow(fileName, image)
-            cv2.waitKey(0)
-            cv2.destroyAllWindows()
-            break
+            if file == 'qiqi':
+                name = 'A Dead Child'
+                cv2.imshow(name, image)
+                cv2.waitKey(0)
+                cv2.destroyAllWindows()
+                break
+
+            if file == 'childe':
+                name = 'A Weird Childe'
+                cv2.imshow(name, image)
+                cv2.waitKey(0)  
+                cv2.destroyAllWindows()
+                break
 
         else:
             print("File not found...")
